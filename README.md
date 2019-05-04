@@ -1,13 +1,14 @@
-#h1
-##h2
-###h3
-####h4
-#####h5
-######h6
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
 
-*italic*
+Alternatively, for H1 and H2, an underline-ish style:
 
-**bold**
+Alt-H1
+======
 
-
-
+Alt-H2
+------
