@@ -1,17 +1,17 @@
 **1.** You type in your URL (google.com)
 
 **2.** Find an adress for the site  
- a. Browser Cache  
- b. Comp Cache  
- c. Router Cache  
- d. Provider Cache (ISP - Internet Service Provider)  
+ _a._ Browser Cache  
+ _b._ Comp Cache  
+ _c._ Router Cache  
+ _d._ Provider Cache (ISP - Internet Service Provider)  
  ...  
- z. Query a DNS (Domain Name System)
+ _z._ Query a DNS (Domain Name System)
 
 **3.** Three way handshake  
- a. SYN - synchronize  
- b. ACK - acknowlegement  
- c. SYN/ACK -> ACK
+ _a._ SYN - synchronize  
+ _b._ ACK - acknowlegement  
+ _c._ SYN/ACK -> ACK
 
 **4.** Browser -> HTTP REQUEST -> Server
 
