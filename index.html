@@ -1,23 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Hello mate.academy</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, impedit!</p>
-    <ol>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-        <li>Lorem ipsum dolor.</li>
-    </ol>
-</body>
+  <header>
+    <img src="" alt="" class="logo">
+    <div>
+      <ul>
+        <li><a href="#">Курсы</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Цены</a></li>
+      </ul>
+    </div>
+    <div class="connect">
+      <ul>
+        <li><a href="">099-198-5025</a></li>
+        <li><a href="">098-015-9261</a></li>
+      </ul>
+      <a href="#">Записаться на курс</a>
+    </div>
+  </header>
 
+  <main>
+    <section class="banner">
+      <h1>Не теряй время</h1>
+      <p>Поможем поднять свой уровень или освоить новые знания</p>
+      <a href="">Выбрать курс</a>
+    </section>
+
+    <section class="description">
+      <div>
+        <h2>Только самое необходимое</h2>
+        <p>Учим только тому, что реально может понадобиться, в необходимости чего убедились на практике.</p>
+      </div>
+      <div>
+        <h2>Принцип 80/20</h2>
+        <p>Большая часть учёбы является практической, т.к. это и является главной целью.</p>
+      </div>
+      <div>
+        <h2>Гарантия качества</h2>
+        <p>У нас нет 2-шников и отличников. Все будут одинаково хорошо владеть изучаемым направлением.</p>
+      </div>
+    </section>
+
+    <section class="courses">
+      <h2></h2>
+      <div>
+        <img src="" alt="">
+        <h3 class="courseName">Физика</h3>
+        <p class="shedule">Пн-Пт 17:00-19:00</p>
+        <p class="term">3 месяца</p>
+        <p class="biginCourse">20 августа 2019</p>
+      </div>
+      <div>
+        <img src="" alt="">
+        <h3 class="courseName">Математика</h3>
+        <p class="shedule">Пн-Пт 19:00-21:00</p>
+        <p class="term">3 месяца</p>
+        <p class="biginCourse">20 августа 2019</p>
+      </div>
+      <div>
+        <img src="" alt="">
+        <h3 class="courseName">IT</h3>
+        <p class="shedule">Пн-Пт 19:00-21:00</p>
+        <p class="term">4 месяца</p>
+        <p class="biginCourse">20 августа 2019</p>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2>Отзывы</h2>
+      <img src="" alt="">
+      <h3>Саділенко Юра</h3>
+      <div>
+        <img src="" alt="" class="personSocialLink">
+        <img src="" alt="" class="personSocialLink">
+        <img src="" alt="" class="personSocialLink">
+      </div>
+      <p class="review">Курсы в Mate academy это замечательная возможность сделать свое желание реальностью, для тех кто хочет работать в сфере IT! Я познакомилась с замечательной командой, которая поддерживает на протяжении всего обучения и потом в течении 3-х лет.</p>
+      <p class="date">11 сентября 2019</p>
+    </section>
+
+    <section class="singUpForCourse">
+      <h2>Записаться на курс</h2>
+      <form action="">
+        <label for="name">Имя</label>
+        <input type="text" id="name">
+        <label for="surname">Фамилия</label>
+        <input type="text" id="surname">
+        <label for="e-mail">E-mail</label>
+        <input type="text" id="e-mail">
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone">
+        <label for="courses">Курс</label>
+        <select name="courses" id="courses">
+          <option value="">Физика</option>
+          <option value="">Математика</option>
+          <option value="">IT</option>
+        </select>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <img src="" alt="" class="logo">
+    <div class="socialLinks">
+      <a href=""><img src="" alt=""></a>
+      <a href=""><img src="" alt=""></a>
+      <a href=""><img src="" alt=""></a>
+    </div>
+    <div class="contacts">
+      <div class="e-mail">
+        <p>e-mail:</p>
+        <a href="#">infoEL@gmail.com</a>
+      </div>
+      <div class="phoneNumber">
+        <p>тел:</p>
+        <a href="#">099-198-5025</a>
+      </div>
+      <div class="phoneNumber">
+        <a href="#">098-015-9261</a>
+      </div>
+    </div>
+    <p class="copyright">© Copyright 2019, Extra Learn</p>
+  </footer>
+
+  <script src="./scripts.js"></script>
+</body>
 </html>
