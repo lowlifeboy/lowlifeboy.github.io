@@ -1,8 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #0B162B;
+}
+
+a {
+  text-decoration: none;
+  color: #0B162B;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 header {
-  height: 84px;
+  height: 75px;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  z-index: 999;
+}
+header .logoContainer a {
+  display: flex;
+  align-items: center;
+  color: #7600ff;
+}
+header .logoContainer span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+header .logo {
+  margin-right: 7px;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container div {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  font-weight: 500;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header ul {
+  list-style: none;
+}
+header .registerOnCourse {
+  margin-left: 30px;
+  background: #7600ff;
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #fff;
+}
+header .coursesList {
+  position: relative;
+}
+header .coursesList ul {
+  display: none;
+  position: absolute;
+  top: 24px;
+  background: #fff;
+  padding: 10px 0 10px 24px;
+  box-shadow: 0px 1px 3px rgba(11, 22, 43, 0.4);
+  border-radius: 5px;
+}
+header .coursesList ul li {
+  margin-bottom: 7px;
+}
+header .coursesList ul li:last-child {
+  margin-bottom: 0;
+}
+header .coursesList:hover ul {
+  display: block;
+}
+header .isDisabled {
+  text-decoration: none;
+}
+header .connect {
+  font-weight: 500;
+}
+header .phoneNumber {
+  font-size: 13px;
+}
+header .phoneNumber:first-child {
+  margin-bottom: 5px;
+}
+
+.tiny {
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(11, 22, 43, 0.4);
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/section_1/background.svg) no-repeat top right;
+}
+.banner .container {
+  display: flex;
+  width: 100vw;
+}
+.banner__text h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.banner__text p {
+  width: 400px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+.banner__text a {
+  background: #7600ff;
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 500;
+}
+.banner__image {
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(118, 0, 255, 0.1);
+}
+.description .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 90px;
+}
+.description .container div h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.description .container div p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B162B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.courses {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/section_3/background.svg) no-repeat top right;
+}
+.courses .container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+.courses .container a {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.courses .container a:hover {
+  box-shadow: 0px 1px 3px rgba(11, 22, 43, 0.4);
+  border-radius: 5px;
+}
+.courses .container h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.courses .container p {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.courses .container .shedule {
+  color: #7600ff;
+}
+.courses .container .term {
+  color: rgba(118, 0, 255, 0.7);
+}
+.courses .container .biginCourse {
+  color: rgba(118, 0, 255, 0.4);
+}
+
+.singUpForCourse {
+  padding: 80px 0;
+  background: rgba(118, 0, 255, 0.6);
+}
+.singUpForCourse .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.singUpForCourse .container h2 {
+  margin-bottom: 50px;
+}
+.singUpForCourse .container form .rowFormFields {
+  display: flex;
+  flex-direction: row;
+}
+.singUpForCourse .container form .rowFormFields .formField {
+  margin-right: 30px;
+  height: 70px;
+  position: relative;
+}
+.singUpForCourse .container form .rowFormFields .formField:last-child {
+  margin-right: 0;
+}
+.singUpForCourse .container form .rowFormFields .formField label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.singUpForCourse .container form .rowFormFields .formField input {
+  border: none;
+  background: none;
+  border-bottom: 2px solid #7600ff;
+}
+.singUpForCourse .container form .rowFormFields .formField input:active label {
+  top: -20px;
+}
+.singUpForCourse .container form .formCoursesContainer {
+  margin-bottom: 20px;
+}
+.singUpForCourse .container form .formCoursesContainer label {
+  margin-right: 10px;
+}
+.singUpForCourse .container form .formCoursesContainer select {
+  border: none;
+  background: none;
+  border-bottom: 2px solid #7600ff;
+}
+.singUpForCourse .container form .formCoursesContainer select option {
+  background: none;
+}
+.singUpForCourse .container form .formQuestionsContainer {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.singUpForCourse .container form .formQuestionsContainer label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.singUpForCourse .container form .formQuestionsContainer textarea {
+  border: none;
+  background: none;
+  border-bottom: 2px solid #7600ff;
+}
+.singUpForCourse .container form .formQuestionsContainer textarea:active label {
+  top: -20px;
+}
+.singUpForCourse .container form button {
+  background: #7600ff;
+  padding: 8px 10px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  height: 75px;
+}
+footer div {
+  display: flex;
+  align-items: center;
+}
+footer .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .logoContainer a {
+  display: flex;
+  align-items: center;
+  color: #7600ff;
+}
+footer .container .logoContainer span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer .container .logo {
+  margin-right: 7px;
+}
+footer .container .contacts div {
+  margin-right: 20px;
+}
+footer .container .contacts p {
+  margin-right: 10px;
+}
+footer .container .contacts a {
+  color: #7600ff;
 }
 
 /*# sourceMappingURL=styles.css.map */

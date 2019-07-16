@@ -1,6 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #0B162B;
+}
+
+a {
+  text-decoration: none;
+  color: #0B162B;
+}
+
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 header {
-  height: 84px;
+  height: 75px;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  z-index: 999;
+  .logoContainer {
+    a {
+      display: flex;
+      align-items: center;
+      color: #7600ff;
+    }
+    span {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .logo {
+    margin-right: 7px;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      li {
+        font-weight: 500;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  .registerOnCourse {
+    margin-left: 30px;
+    background: #7600ff;
+    padding: 8px 10px;
+    border-radius: 3px;
+    color: #fff;
+  }
+  .coursesList {
+    position: relative;
+    ul {
+      display: none;
+      position: absolute;
+      top: 24px;
+      background: #fff;
+      padding: 10px 0 10px 24px;
+      box-shadow: 0px 1px 3px rgba($color: #0B162B, $alpha: 0.4);
+      border-radius: 5px;
+      li {
+        margin-bottom: 7px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:hover ul {
+      display: block;
+    }
+  }
+  .isDisabled {
+    text-decoration: none;
+  }
+  .connect {
+    font-weight: 500;
+  }
+  .phoneNumber {
+    font-size: 13px;
+    &:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.tiny {
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba($color: #0B162B, $alpha: 0.4);
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/section_1/background.svg) no-repeat top right;
+  .container {
+    display: flex;
+    width: 100vw;
+  } 
+  &__text {
+    h1 {
+      font-weight: bold;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 400px;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 40px;
+    }
+    a {
+      background: #7600ff;
+      padding: 8px 10px;
+      border-radius: 3px;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.description {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba($color: #7600ff, $alpha: 0.1);
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 90px;
+    div {
+      h2 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        color: #0B162B;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.courses {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/section_3/background.svg) no-repeat top right;
+  .container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    a {
+      width: 250px;
+      padding: 10px;
+      margin-bottom: 20px;
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: 0px 1px 3px rgba($color: #0B162B, $alpha: 0.4);
+        border-radius: 5px;
+      }
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    .shedule {
+      color: rgba($color: #7600ff, $alpha: 1.0);
+    }
+    .term {
+      color: rgba($color: #7600ff, $alpha: 0.7);
+    }
+    .biginCourse {
+      color: rgba($color: #7600ff, $alpha: 0.4);
+    }
+  } 
+}
+
+.singUpForCourse {
+  padding: 80px 0;
+  background: rgba($color: #7600ff, $alpha: 0.6);
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      margin-bottom: 50px;
+    }
+    form {
+      .rowFormFields {
+        display: flex;
+        flex-direction: row;
+        .formField {
+          margin-right: 30px;
+          height: 70px;
+          position: relative;
+          &:last-child {
+            margin-right: 0;
+          }
+          label {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          input {
+            border: none;
+            background: none;
+            border-bottom: 2px solid #7600ff;
+          }
+          input:active label {
+            top: -20px;
+          }
+        }
+      }
+      .formCoursesContainer {
+        margin-bottom: 20px;
+        label {
+          margin-right: 10px;
+        }
+        select {
+          border: none;
+          background: none;
+          border-bottom: 2px solid #7600ff;
+          option {
+            background: none;
+          }
+        }
+      }
+      .formQuestionsContainer {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        label {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        textarea {
+          border: none;
+          background: none;
+          border-bottom: 2px solid #7600ff;
+        }
+        textarea:active label {
+          top: -20px;
+        }
+      }
+      button {
+        background: #7600ff;
+        padding: 8px 10px;
+        border-radius: 3px;
+        border: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+footer {
+  height: 75px;
+  div {
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logoContainer {
+      a {
+        display: flex;
+        align-items: center;
+        color: #7600ff;
+      }
+      span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+    .logo {
+      margin-right: 7px;
+    }
+    .contacts {
+      div {
+        margin-right: 20px;
+      }
+      p {
+        margin-right: 10px;
+      }
+      a {
+        color: #7600ff;
+      }
+    }
+  }
+  
 }
