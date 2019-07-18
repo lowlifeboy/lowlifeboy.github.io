@@ -7,6 +7,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
 </head>
 <body>
   <header id="header">
@@ -99,26 +101,27 @@
         <form action="">
           <div class="rowFormFields">
             <div class="formField">
-              <label for="name">Имя</label>
+              <label class="fieldNameBeforeClick" for="name">Имя</label>
               <input type="text" id="name">
             </div>
             <div class="formField">
-              <label for="surname">Фамилия</label>
+              <label class="fieldNameBeforeClick" for="surname">Фамилия</label>
               <input type="text" id="surname">
             </div>
           </div>
           <div class="rowFormFields">
             <div class="formField">
-              <label for="e-mail">E-mail</label>
+              <label class="fieldNameBeforeClick" for="e-mail">E-mail</label>
               <input type="email" id="e-mail">
             </div>
             <div class="formField">
-              <label for="phone">Телефон</label>
+              <label class="fieldNameBeforeClick" for="phone">Телефон</label>
               <input type="text" id="phone">
             </div>
           </div>
           <div class="formCoursesContainer">
-            <label for="courses">Курс</label>
+            <div class="select-arrow-3"></div>
+            <div class="select-arrow-3"></div>
             <select name="courses" id="courses">
               <option value="">Физика</option>
               <option value="">Математика</option>
@@ -165,5 +168,6 @@
 
   <script src="./header.js"></script>
   <script src="./inputField.js"></script>
+  <script src="./singUpForm.js"></script>
 </body>
 </html>
