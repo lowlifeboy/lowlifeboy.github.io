@@ -22,6 +22,7 @@ formQuestionsContainerField.addEventListener('click', (event) => {
   if (event.target === document.querySelector('textarea')) {
     event.target.previousElementSibling.classList.add('fieldNameAfterClick');
     event.target.previousElementSibling.classList.remove('fieldNameBeforeClick');
+    event.target.style.height = '51px';
     event.target.style.lineHeight = '17px';
   }
 });
