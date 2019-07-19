@@ -101,22 +101,22 @@
         <form action="">
           <div class="rowFormFields">
             <div class="formField">
-              <label class="fieldNameBeforeClick" for="name">Имя</label>
-              <input type="text" id="name">
+              <label class="fieldNameBeforeClick" for="name" data-number="1">Имя</label>
+              <input type="text" id="name" data-number="1" required>
             </div>
             <div class="formField">
-              <label class="fieldNameBeforeClick" for="surname">Фамилия</label>
-              <input type="text" id="surname">
+              <label class="fieldNameBeforeClick" for="surname" data-number="2">Фамилия</label>
+              <input type="text" id="surname" data-number="2" required>
             </div>
           </div>
           <div class="rowFormFields">
             <div class="formField">
-              <label class="fieldNameBeforeClick" for="e-mail">E-mail</label>
-              <input type="email" id="e-mail">
+              <label class="fieldNameBeforeClick" for="e-mail" data-number="3">E-mail</label>
+              <input type="email" id="e-mail" data-number="3" required>
             </div>
             <div class="formField">
-              <label class="fieldNameBeforeClick" for="phone">Телефон</label>
-              <input type="text" id="phone">
+              <label class="fieldNameBeforeClick" for="phone" data-number="4">Телефон</label>
+              <input type="text" id="phone" data-number="4" required>
             </div>
           </div>
           <div class="formCoursesContainer">
@@ -129,8 +129,8 @@
             </select>
           </div>
           <div class="formQuestionsContainer">
-            <label for="">Есть вопросы? Задавайте!</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label class="fieldNameBeforeClick" for="questionField">Есть вопросы? Задавайте!</label>
+            <textarea name="questionField" id="questionField" rows="1"></textarea>
           </div>
           <button type="submit">Отправить</button>
         </form>
@@ -140,10 +140,12 @@
 
   <footer>
     <div class="container">
-      <a href="#">
-        <img src="./images/header/poly.svg" alt="Logo Extra Learn" class="logo">
-        <span>Extra Learn</span>
-      </a>
+      <div class="logoContainer">
+        <a href="#">
+          <img src="./images/header/poly.svg" alt="Logo Extra Learn" class="logo">
+          <span>Extra Learn</span>
+        </a>
+      </div>
       <div class="socialLinks">
         <a href=""><img src="" alt=""></a>
         <a href=""><img src="" alt=""></a>

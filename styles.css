@@ -21,6 +21,21 @@ a {
   margin: 0 auto;
 }
 
+.logoContainer a {
+  display: flex;
+  align-items: center;
+  color: #7600ff;
+}
+.logoContainer span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo {
+  margin-right: 7px;
+}
+
 header {
   height: 75px;
   position: fixed;
@@ -28,19 +43,6 @@ header {
   left: 0;
   width: 100vw;
   z-index: 999;
-}
-header .logoContainer a {
-  display: flex;
-  align-items: center;
-  color: #7600ff;
-}
-header .logoContainer span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-}
-header .logo {
-  margin-right: 7px;
 }
 header .container {
   height: 100%;
@@ -243,10 +245,12 @@ header .phoneNumber:first-child {
 }
 .singUpForCourse .container form .rowFormFields .formField .fieldNameAfterClick {
   position: absolute;
-  top: -30px;
+  top: -20px;
   left: 0;
   padding-left: 10px;
   padding-bottom: 2px;
+  font-size: 10px;
+  transition: all 0.2s;
 }
 .singUpForCourse .container form .rowFormFields .formField input {
   border: none;
@@ -257,6 +261,7 @@ header .phoneNumber:first-child {
 }
 .singUpForCourse .container form .formCoursesContainer {
   margin-bottom: 20px;
+  height: 51px;
 }
 .singUpForCourse .container form .formCoursesContainer label {
   margin-right: 10px;
@@ -285,12 +290,32 @@ header .phoneNumber:first-child {
   left: 0;
 }
 .singUpForCourse .container form .formQuestionsContainer textarea {
+  height: 19px;
   border: none;
   background: none;
   border-bottom: 2px solid #7600ff;
+  padding: 0 10px;
+  padding-bottom: 2px;
+  resize: none;
 }
 .singUpForCourse .container form .formQuestionsContainer textarea:active label {
   top: -20px;
+}
+.singUpForCourse .container form .formQuestionsContainer .fieldNameBeforeClick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  padding-bottom: 2px;
+}
+.singUpForCourse .container form .formQuestionsContainer .fieldNameAfterClick {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  font-size: 10px;
+  transition: all 0.2s;
 }
 .singUpForCourse .container form button {
   background: #7600ff;
@@ -410,27 +435,21 @@ footer .container {
   justify-content: space-between;
   align-items: center;
 }
-footer .container .logoContainer a {
-  display: flex;
-  align-items: center;
-  color: #7600ff;
-}
-footer .container .logoContainer span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-}
 footer .container .logo {
   margin-right: 7px;
 }
 footer .container .contacts div {
   margin-right: 20px;
+  font-weight: 500;
 }
 footer .container .contacts p {
   margin-right: 10px;
 }
 footer .container .contacts a {
   color: #7600ff;
+}
+footer .container .copyright {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */

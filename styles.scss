@@ -24,6 +24,22 @@ a {
   margin: 0 auto;
 }
 
+.logoContainer {
+  a {
+    display: flex;
+    align-items: center;
+    color: #7600ff;
+  }
+  span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+.logo {
+  margin-right: 7px;
+}
+
 header {
   height: 75px;
   position: fixed;
@@ -31,21 +47,6 @@ header {
   left: 0;
   width: 100vw;
   z-index: 999;
-  .logoContainer {
-    a {
-      display: flex;
-      align-items: center;
-      color: #7600ff;
-    }
-    span {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      font-size: 18px;
-    }
-  }
-  .logo {
-    margin-right: 7px;
-  }
   .container {
     height: 100%;
     display: flex;
@@ -251,10 +252,12 @@ header {
           }
           .fieldNameAfterClick {
             position: absolute;
-            top: -30px;
+            top: -20px;
             left: 0;
             padding-left: 10px;
             padding-bottom: 2px;
+            font-size: 10px;
+            transition: all 0.2s;
           }
           input {
             border: none;
@@ -267,10 +270,11 @@ header {
       }
       .formCoursesContainer {
         margin-bottom: 20px;
+        height: 51px;
         label {
           margin-right: 10px;
         }
-        select {  
+        select {
           border: none;
           background: none;
           border-bottom: 2px solid #7600ff;
@@ -293,12 +297,32 @@ header {
           left: 0;
         }
         textarea {
+          height: 19px;
           border: none;
           background: none;
           border-bottom: 2px solid #7600ff;
+          padding: 0 10px;
+          padding-bottom: 2px;
+          resize: none;
         }
         textarea:active label {
           top: -20px;
+        }
+        .fieldNameBeforeClick {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding-left: 10px;
+          padding-bottom: 2px;
+        }
+        .fieldNameAfterClick {
+          position: absolute;
+          top: -20px;
+          left: 0;
+          padding-left: 10px;
+          padding-bottom: 2px;
+          font-size: 10px;
+          transition: all 0.2s;
         }
       }
       button {
@@ -412,24 +436,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logoContainer {
-      a {
-        display: flex;
-        align-items: center;
-        color: #7600ff;
-      }
-      span {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-      }
-    }
     .logo {
       margin-right: 7px;
     }
     .contacts {
       div {
         margin-right: 20px;
+        font-weight: 500;
       }
       p {
         margin-right: 10px;
@@ -438,6 +451,8 @@ footer {
         color: #7600ff;
       }
     }
+    .copyright {
+      font-weight: 500;
+    }
   }
-  
 }
