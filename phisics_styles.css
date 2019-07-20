@@ -87,4 +87,93 @@ header {
   font-size: calc(12.8561px + 0.357462vw);
 }
 
+.courseFullDescription {
+  background: #F1E5FF;
+}
+.courseFullDescription .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.courseFullDescription .container h2 {
+  font-size: calc(15.4245px + 1.42985vw);
+  background: linear-gradient(90deg, rgba(118, 0, 255, 0.7) 33%, #7600ff 66%, rgba(118, 0, 255, 0.5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin-bottom: 40px;
+}
+.courseFullDescription .container ul {
+  list-style: none;
+}
+.courseFullDescription .container ul li {
+  font-size: calc(12.8561px + 0.357462vw);
+  margin-bottom: 20px;
+}
+
+.courseProgramm .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.courseProgramm .container h2 {
+  font-size: calc(15.4245px + 1.42985vw);
+  background: linear-gradient(90deg, rgba(118, 0, 255, 0.7) 33%, #7600ff 66%, rgba(118, 0, 255, 0.5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin-bottom: 40px;
+}
+.courseProgramm .container ul {
+  list-style: none;
+}
+.courseProgramm .container ul li {
+  font-size: calc(12.8561px + 0.357462vw);
+  margin-bottom: 20px;
+  display: flex;
+}
+.courseProgramm .container ul li .themeNumber {
+  width: 15%;
+  font-size: calc(16.8561px + 0.357462vw);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.requirements {
+  background: #F1E5FF;
+}
+.requirements .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.requirements .container h2 {
+  font-size: calc(15.4245px + 1.42985vw);
+  background: linear-gradient(90deg, rgba(118, 0, 255, 0.7) 33%, #7600ff 66%, rgba(118, 0, 255, 0.5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin-bottom: 40px;
+}
+.requirements .container ul {
+  list-style: none;
+}
+.requirements .container ul li {
+  font-size: calc(12.8561px + 0.357462vw);
+  margin-bottom: 20px;
+  display: flex;
+}
+.requirements .container ul li .reqName {
+  width: 20%;
+  font-size: calc(16.8561px + 0.357462vw);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.requirements .container ul li .reqs {
+  max-width: 700px;
+}
+
 /*# sourceMappingURL=phisics_styles.css.map */

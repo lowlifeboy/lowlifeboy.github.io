@@ -88,3 +88,94 @@ header {
     }
   }
 }
+
+.courseFullDescription {
+  background: #F1E5FF;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    h2 {
+      font-size: calc(15.4245px + 1.42985vw);
+      background: linear-gradient(90deg, rgba($color: #7600ff, $alpha: 0.7) 33%, rgba($color: #7600ff, $alpha: 1.0) 66%, rgba($color: #7600ff, $alpha: 0.5));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0B2349;
+      display: table;
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: calc(12.8561px + 0.357462vw);
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.courseProgramm {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    h2 {
+      font-size: calc(15.4245px + 1.42985vw);
+      background: linear-gradient(90deg, rgba($color: #7600ff, $alpha: 0.7) 33%, rgba($color: #7600ff, $alpha: 1.0) 66%, rgba($color: #7600ff, $alpha: 0.5));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0B2349;
+      display: table;
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: calc(12.8561px + 0.357462vw);
+        margin-bottom: 20px;
+        display: flex;
+        .themeNumber {
+          width: 15%;
+          font-size: calc(16.8561px + 0.357462vw);
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.requirements {
+  background: #F1E5FF;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    h2 {
+      font-size: calc(15.4245px + 1.42985vw);
+      background: linear-gradient(90deg, rgba($color: #7600ff, $alpha: 0.7) 33%, rgba($color: #7600ff, $alpha: 1.0) 66%, rgba($color: #7600ff, $alpha: 0.5));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0B2349;
+      display: table;
+      margin-bottom: 40px;
+    }
+    ul {
+      list-style: none;
+      li {
+        font-size: calc(12.8561px + 0.357462vw);
+        margin-bottom: 20px;
+        display: flex;
+        .reqName {
+          width: 20%;
+          font-size: calc(16.8561px + 0.357462vw);
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .reqs {
+          max-width: 700px;
+        }
+      }
+    }
+  }
+}
