@@ -36,6 +36,23 @@ a {
   margin-right: 7px;
 }
 
+.contacts a,
+.hoveredNavLink a,
+.connect a {
+  text-decoration: none;
+  background-image: linear-gradient(#7600ff, #7600ff);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.contacts a:hover, .contacts a:focus,
+.hoveredNavLink a:hover, .hoveredNavLink a:focus,
+.connect a:hover, .connect a:focus {
+  background-size: 100% 2px;
+}
+
 header {
   height: 75px;
   position: fixed;
@@ -84,15 +101,17 @@ header .coursesList ul {
   position: absolute;
   top: 24px;
   background: #fff;
-  padding: 10px 0 10px 24px;
   box-shadow: 0px 1px 3px rgba(11, 22, 43, 0.4);
-  border-radius: 5px;
 }
 header .coursesList ul li {
-  margin-bottom: 7px;
+  padding: 6px 24px 6px 24px;
+  margin-right: 0;
 }
 header .coursesList ul li:last-child {
   margin-bottom: 0;
+}
+header .coursesList ul li:hover {
+  background-color: rgba(118, 0, 255, 0.3);
 }
 header .coursesList:hover ul {
   display: block;
