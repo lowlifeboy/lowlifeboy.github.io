@@ -1,0 +1,47 @@
+.phisics {
+  background: rgba(118, 0, 255, 0.7);
+}
+
+header {
+  background: #fff;
+}
+
+.bannerPhisics {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
+  background-size: cover;
+  color: #fff;
+}
+.bannerPhisics .container {
+  display: flex;
+  width: 100vw;
+}
+.bannerPhisics__text h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.bannerPhisics__text p {
+  width: 400px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+.bannerPhisics__text a {
+  background: #7600ff;
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 500;
+}
+.bannerPhisics__image {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=phisics_styles.css.map */
