@@ -10,38 +10,81 @@ header {
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
+  background: rgba(0, 0, 0, 0.3);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.2) 100%), url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(25%, rgba(0, 0, 0, 0.55)), color-stop(50%, rgba(0, 0, 0, 0.6)), color-stop(75%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.2) 100%), url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.2) 100%), url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.2) 100%), url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.2) 100%), url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
   background-size: cover;
   color: #fff;
   .container {
     display: flex;
-    width: 100vw;
-  } 
-  &__text {
-    h1 {
-      font-weight: bold;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    p {
-      width: 400px;
-      font-size: 24px;
-      line-height: 36px;
-      margin-bottom: 40px;
-    }
-    a {
-      background: #7600ff;
-      padding: 8px 10px;
-      border-radius: 3px;
-      color: #fff;
-      font-weight: 500;
-    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  &__image {
-    height: 100%;
-    width: 100%;
+  .courseType {
+    font-size: calc(15.4245px + 1.42985vw);
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h1 {
+    color: #ad6dfc;
+    text-align: center;
+    font-size: calc(22.8418px + 5.36193vw);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .courseShortDescription {
+    text-align: center;
+    max-width: 75%;
+    font-size: calc(16.8561px + 0.357462vw);
+    line-height: 1.3em;
+    font-weight: 700; 
+    margin: 0px auto 40px;
+  }
+  a {
+    font-size: calc(16.8561px + 0.357462vw);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 30px;
+    background: #7600ff;
+    padding: 15px 27px;
+    border-radius: 3px;
+    color: #fff;
+  }
+}
+
+.courceMainMoments {
+  .container {
+    display: flex;
+    padding: 50px 0;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      li {
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          margin-bottom: 20px;
+        }
+        h3 {
+          font-size: calc(16.2842px + 0.536193vw);
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: calc(12.8561px + 0.357462vw);
+        }
+      }
+    }
   }
 }
