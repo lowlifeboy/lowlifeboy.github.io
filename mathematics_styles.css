@@ -1,0 +1,20 @@
+.mathematics {
+  background: rgba(118, 0, 255, 0.7);
+}
+
+header {
+  background: #fff;
+}
+
+.bannerMathematics {
+  background: rgba(0, 0, 0, 0.3);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.4) 100%), url(./images/imagesMath/blured_bg.jpg) no-repeat top right;
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(25%, rgba(0, 0, 0, 0.55)), color-stop(50%, rgba(0, 0, 0, 0.6)), color-stop(75%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4))), url(./images/imagesMath/blured_bg.jpg) no-repeat top right;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.4) 100%), url(./images/imagesMath/blured_bg.jpg) no-repeat top right;
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.4) 100%), url(./images/imagesMath/blured_bg.jpg) no-repeat top right;
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.4) 100%), url(./images/imagesMath/blured_bg.jpg) no-repeat top right;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.4) 100%), url(./images/imagesMath/blured_bg.jpg) no-repeat top right;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=mathematics_styles.css.map */

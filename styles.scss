@@ -100,7 +100,9 @@ header {
   }
   .coursesList {
     position: relative;
+    // width: 190px;
     ul {
+      width: 166px;
       display: none;
       position: absolute;
       top: 24px;
