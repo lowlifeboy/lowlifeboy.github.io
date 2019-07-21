@@ -18,6 +18,22 @@ a {
 }
 
 
+
+
+.button {
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  background: #fff;
+  color: #7600ff;
+  box-shadow: 0px 2px 10px -4px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+
+
+
 .container {
   max-width: 1140px;
   padding: 0 20px;
@@ -94,7 +110,8 @@ header {
   .registerOnCourse {
     margin-left: 30px;
     background: #7600ff;
-    padding: 8px 10px;
+    padding: 7px 9px;
+    border: 1px solid #7600ff;
     border-radius: 3px;
     color: #fff;
   }
@@ -165,7 +182,8 @@ header {
     }
     a {
       background: #7600ff;
-      padding: 8px 10px;
+      padding: 7px 9px;
+      border: 1px solid #7600ff;
       border-radius: 3px;
       color: #fff;
       font-weight: 500;
@@ -348,10 +366,20 @@ header {
       }
       button {
         background: #7600ff;
-        padding: 8px 10px;
+        padding: 7px 9px 8px 9px;
+        border: 1px solid #7600ff;
         border-radius: 3px;
-        border: none;
+        // border: none;
         color: #fff;
+        transition: all 0.3s ease 0s;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #7600ff;
+        box-shadow: 0px 2px 10px -4px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
       }
     }
   }
