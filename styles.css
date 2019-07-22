@@ -377,7 +377,7 @@ header .phoneNumber:first-child {
 .jq-selectbox {
   vertical-align: middle;
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   position: relative;
 }
 
