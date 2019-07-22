@@ -103,6 +103,11 @@ header {
         }
         a {
           padding: 8px;
+          transition: background 0.3s;
+          &:hover {
+            background: rgba($color: #7600ff, $alpha: 0.4);
+            transition: background 0.3s;
+          }
         }
       }
     }

@@ -96,6 +96,11 @@ header nav ul li:last-child {
 }
 header nav ul li a {
   padding: 8px;
+  transition: background 0.3s;
+}
+header nav ul li a:hover {
+  background: rgba(118, 0, 255, 0.4);
+  transition: background 0.3s;
 }
 header ul {
   list-style: none;
