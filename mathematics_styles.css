@@ -1,6 +1,9 @@
 .mathematics {
   background: rgba(118, 0, 255, 0.7);
 }
+.mathematics a {
+  color: #fff;
+}
 
 header {
   background: #fff;

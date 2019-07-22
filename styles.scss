@@ -95,11 +95,14 @@ header {
       display: flex;
       li {
         font-weight: 500;
-        margin-right: 30px;
+        margin: 0px 6px;
         display: flex;
         align-items: center;
         &:last-child {
           margin-right: 0;
+        }
+        a {
+          padding: 8px;
         }
       }
     }

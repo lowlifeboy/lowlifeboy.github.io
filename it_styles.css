@@ -1,6 +1,9 @@
 .it {
   background: rgba(118, 0, 255, 0.7);
 }
+.it a {
+  color: #fff;
+}
 
 header {
   background: #fff;

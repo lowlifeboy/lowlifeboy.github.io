@@ -87,12 +87,15 @@ header nav ul {
 }
 header nav ul li {
   font-weight: 500;
-  margin-right: 30px;
+  margin: 0px 6px;
   display: flex;
   align-items: center;
 }
 header nav ul li:last-child {
   margin-right: 0;
+}
+header nav ul li a {
+  padding: 8px;
 }
 header ul {
   list-style: none;
