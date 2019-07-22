@@ -20,4 +20,9 @@ header {
   background-size: cover;
 }
 
+.courseFullDescription .container {
+  background: url(./images/aboutPhisMathCourses.svg) no-repeat center right;
+  background-size: auto 60%;
+}
+
 /*# sourceMappingURL=phisics_styles.css.map */

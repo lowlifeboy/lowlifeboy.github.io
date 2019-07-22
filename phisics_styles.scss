@@ -19,3 +19,10 @@ header {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.55) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.55) 75%, rgba(0, 0, 0, 0.2) 100%), url(./images/imagesPhisics/section1/blured_bg.jpg) no-repeat top right;
   background-size: cover;
 }
+
+.courseFullDescription {
+  .container {
+    background: url(./images/aboutPhisMathCourses.svg) no-repeat center right;
+    background-size: auto 60%;
+  }
+}

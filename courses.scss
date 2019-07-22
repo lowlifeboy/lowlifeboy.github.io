@@ -46,7 +46,7 @@
 .courceMainMoments {
   .container {
     display: flex;
-    padding: 50px 0;
+    padding: 70px 0;
     ul {
       width: 100%;
       display: flex;
@@ -73,11 +73,11 @@
 }
 
 .courseFullDescription {
-  background: #F1E5FF;
+  background: #c9a9ec;
   .container {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 70px 0;
     h2 {
       font-size: calc(15.4245px + 1.42985vw);
       background: linear-gradient(90deg, rgba($color: #7600ff, $alpha: 0.7) 33%, rgba($color: #7600ff, $alpha: 1.0) 66%, rgba($color: #7600ff, $alpha: 0.5));
@@ -91,7 +91,11 @@
       list-style: none;
       li {
         font-size: calc(12.8561px + 0.357462vw);
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        width: 50%;
+        &:last-child {
+          margin-bottom: 15px;
+        }
       }
     }
   }

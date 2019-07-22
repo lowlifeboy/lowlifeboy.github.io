@@ -45,7 +45,7 @@
 
 .courceMainMoments .container {
   display: flex;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 .courceMainMoments .container ul {
   width: 100%;
@@ -71,12 +71,12 @@
 }
 
 .courseFullDescription {
-  background: #F1E5FF;
+  background: #c9a9ec;
 }
 .courseFullDescription .container {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 .courseFullDescription .container h2 {
   font-size: calc(15.4245px + 1.42985vw);
@@ -92,7 +92,11 @@
 }
 .courseFullDescription .container ul li {
   font-size: calc(12.8561px + 0.357462vw);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  width: 50%;
+}
+.courseFullDescription .container ul li:last-child {
+  margin-bottom: 15px;
 }
 
 .courseProgramm .container {
