@@ -8,6 +8,26 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #0B162B;
+  overflow-x: hidden;
+}
+
+.menu {
+  display: none;
+  color: #7600ff;
+}
+
+.menu span {
+  display: none;
+}
+
+header,
+.banner,
+.description,
+.courses,
+.singUpForCourse,
+footer {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 a {
@@ -30,6 +50,7 @@ a {
   max-width: 1140px;
   padding: 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .logoContainer a {
@@ -159,7 +180,7 @@ header .phoneNumber:first-child {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./images/section_1/background.svg) no-repeat top right;
+  background: url(../images/imagesHome/backgroundBanner.svg) no-repeat top right;
 }
 .banner .container {
   display: flex;
@@ -193,7 +214,7 @@ header .phoneNumber:first-child {
   padding: 80px 0;
   display: flex;
   align-items: center;
-  background-color: rgba(118, 0, 255, 0.1);
+  background-color: #E9EEF2;
 }
 .description .container {
   display: grid;
@@ -217,7 +238,10 @@ header .phoneNumber:first-child {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./images/section_3/background.svg) no-repeat top right;
+  background: url(../images/imagesHome/backgroundSection3.svg) no-repeat top right;
+}
+.courses h2 {
+  display: none;
 }
 .courses .container {
   display: flex;
@@ -502,3 +526,110 @@ footer .container .copyright {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+@media (max-width: 1230px) {
+  .banner {
+    background-size: auto 80%;
+    background-position: center right;
+  }
+  .banner__text {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .description .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: none;
+    grid-gap: 0;
+  }
+  .description .container div {
+    width: 290px;
+    margin: 0;
+  }
+
+
+  .courses {
+    width: 100%;
+    flex-direction: column;
+    background: none;
+    height: auto;
+    padding: 70px 0;
+  }
+  .courses h2 {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .courses h3 {
+    color: rgba(118, 0, 255, 0.6);
+    /* text-align: center;   */
+  }
+  .courses .container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .courses .container a {
+    width: auto;
+  }
+  .courses .container .shedule,
+  .courses .container .term,
+  .courses .container .biginCourse {
+    font-size: 18px;
+    line-height: 30px;
+    color: #0B162B;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+  }
+}
+
+@media (max-width: 990px) {
+  header {
+    height: 65px;
+  }
+
+  .banner {
+    background-size: auto 70%;
+  }
+
+  .description .container,
+  .courses .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .description .container div,
+  .courses .container div {
+    width: auto;
+  }
+
+  .courses .container .shedule,
+  .courses .container .term,
+  .courses .container .biginCourse {
+    font-size: calc(11.8561px + 0.357462vw);
+    line-height: 30px;
+    color: #0B162B;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+
+}

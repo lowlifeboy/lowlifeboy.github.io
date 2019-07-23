@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css + sass/styles.css">
+
+  <script src="https://kit.fontawesome.com/3c8130612b.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
@@ -13,9 +16,14 @@
 <body>
   <header id="header">
     <div class="container">
+      <div class="menu">
+        <span>
+          <i class="fa-2x fas fa-bars"></i>
+        </span>
+      </div>
       <div class="logoContainer">
         <a href="index.html">
-          <img src="./images/header/poly.svg" alt="Logo Extra Learn" class="logo">
+          <img src="./images/poly.svg" alt="Logo Extra Learn" class="logo">
           <span>Extra Learn</span>
         </a>
       </div>
@@ -50,12 +58,12 @@
     <section class="description">
       <div class="container">
         <div>
-          <h2>Только самое необходимое</h2>
-          <p>Учим только тому, что реально может понадобиться, в необходимости чего убедились на практике.</p>
-        </div>
-        <div>
           <h2>Принцип 80/20</h2>
           <p>Большая часть учёбы является практической, т.к. это и является главной целью.</p>
+        </div>
+        <div>
+          <h2>Только самое необходимое</h2>
+          <p>Учим только тому, что реально может понадобиться, в необходимости чего убедились на практике.</p>
         </div>
         <div>
           <h2>Гарантия качества</h2>
@@ -65,6 +73,7 @@
     </section>
 
     <section class="courses" id="courses">
+      <h2>Предметы</h2>
       <div class="container">
         <a href="phisics_course.html">
           <h3 class="courseName">Физика</h3>
@@ -134,26 +143,23 @@
     <div class="container">
       <div class="logoContainer">
         <a href="#">
-          <img src="./images/header/poly.svg" alt="Logo Extra Learn" class="logo">
+          <img src="./images/poly.svg" alt="Logo Extra Learn" class="logo">
           <span>Extra Learn</span>
         </a>
-      </div>
-      <div class="socialLinks">
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
       </div>
       <div class="contacts">
         <div class="e-mail">
           <p>e-mail:</p>
           <a href="mailto:infoextralearn@gmail.com">infoExtraLearn@gmail.com</a>
         </div>
-        <div class="phoneNumber">
-          <p>тел:</p>
-          <a href="tel:+380950549719">095-054-9719</a>
-        </div>
-        <div class="phoneNumber">
-          <a href="tel:+380980159261">098-015-9261</a>
+        <div>
+          <div class="phoneNumber">
+            <p>тел:</p>
+            <a href="tel:+380950549719">095-054-9719</a>
+          </div>
+          <div class="phoneNumber">
+            <a href="tel:+380980159261">098-015-9261</a>
+          </div>
         </div>
       </div>
       <p class="copyright">© Copyright 2019, Extra Learn</p>
