@@ -705,15 +705,22 @@ footer .container .copyright {
   header {
     height: 50px;
   }
-  header .registerOnCourse {
+  header .container {
+    flex-direction: row-reverse;
+  }
+  header .connect {
     position: fixed;
     left: 0;
     bottom: 0;
-    border-radius: 0;
     height: 7vh;
     min-height: 20px;
     width: 100%;
     line-height: 100%;
+  }
+  header .registerOnCourse {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,7 +729,12 @@ footer .container .copyright {
     text-transform: uppercase;
     font-weight: 700;
   }
-
+  nav {
+    position: absolute;
+    top: 55px;
+    left: none;
+    right: 20px;
+  }
   .banner .container {
     justify-content: center;
     text-align: center;
