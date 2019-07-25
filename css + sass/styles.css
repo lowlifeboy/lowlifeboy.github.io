@@ -771,6 +771,7 @@ footer .container .copyright {
 
   .singUpForCourse .container form .rowFormFields {
     flex-direction: column;
+    width: 100%;
   }
 
   .singUpForCourse .container form .rowFormFields .formField {
