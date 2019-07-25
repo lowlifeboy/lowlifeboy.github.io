@@ -772,14 +772,4 @@ footer .container .copyright {
   .singUpForCourse .container form .rowFormFields .formField {
     margin-right: 0;
   }
-
-  .singUpForCourse .container form .rowFormFields .formField input,
-  .jq-selectbox__select,
-  .singUpForCourse .container form button {
-    width: calc(100% - 17px);
-  }
-
-  .jq-selectbox__trigger-arrow {
-    right: -30px;
-  }
 }
