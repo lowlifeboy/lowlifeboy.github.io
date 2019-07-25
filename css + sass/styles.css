@@ -661,9 +661,6 @@ footer .container .copyright {
   header .registerOnCourse {
     margin-left: 0;
   }
-  .banner {
-    background: url(../images/imagesHome/backgroundBanner.svg) no-repeat, rgba(255, 255, 255, 0.5);
-  }
   .courses .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
