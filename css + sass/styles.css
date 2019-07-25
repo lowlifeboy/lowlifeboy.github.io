@@ -764,9 +764,6 @@ footer .container .copyright {
 
 
 
-  .singUpForCourse .container form .rowFormFields .formField input {
-    width: calc(100% - 17px);
-  }
 
   .singUpForCourse .container form .rowFormFields {
     flex-direction: column;
@@ -776,7 +773,9 @@ footer .container .copyright {
     margin-right: 0;
   }
 
-  .jq-selectbox__select {
+  .singUpForCourse .container form .rowFormFields .formField input,
+  .jq-selectbox__select,
+  .singUpForCourse .container form button {
     width: calc(100% - 17px);
   }
 
