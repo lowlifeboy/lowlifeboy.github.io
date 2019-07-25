@@ -16,20 +16,6 @@ body {
   color: #7600ff;
 }
 
-.menu span {
-  display: none;
-}
-
-header,
-.banner,
-.description,
-.courses,
-.singUpForCourse,
-footer {
-  width: 100%;
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
   color: #0B162B;
@@ -90,7 +76,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
 }
 header .container {
@@ -126,6 +112,14 @@ header nav ul li a:hover {
 header ul {
   list-style: none;
 }
+
+header hr {
+  display: none;
+}
+header .phoneNumbers {
+  display: none;
+}
+
 header .registerOnCourse {
   margin-left: 30px;
   background: #7600ff;
@@ -245,7 +239,7 @@ header .phoneNumber:first-child {
 }
 .courses .container {
   display: flex;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
 }
 .courses .container a {
@@ -539,7 +533,6 @@ footer .container .copyright {
 
 @media (max-width: 1160px) {
   .description .container {
-    width: 100%;
     display: flex;
     justify-content: space-around;
     grid-template-columns: none;
@@ -552,7 +545,6 @@ footer .container .copyright {
 
 
   .courses {
-    width: 100%;
     flex-direction: column;
     background: none;
     height: auto;
@@ -565,10 +557,8 @@ footer .container .copyright {
   }
   .courses h3 {
     color: rgba(118, 0, 255, 0.6);
-    /* text-align: center;   */
   }
   .courses .container {
-    width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -631,5 +621,166 @@ footer .container .copyright {
 }
 
 @media (max-width: 850px) {
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  nav {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(11, 22, 43, 0.4);
+    padding: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  header hr {
+    display: block;
+    height: 1px;
+    border: none;
+    background: rgba(118, 0, 255, 0.3);
+    margin: 10px;
+  }
+  header .phoneNumbers {
+    display: block;
+  }
+  header nav ul li {
+    margin: 0;
+  }
+  header nav ul li a {
+    width: 100%;
+  }
+  .connect ul {
+    display: none;
+  }
+  header .registerOnCourse {
+    margin-left: 0;
+  }
+  .banner {
+    background: url(../images/imagesHome/backgroundBanner.svg) no-repeat, rgba(255, 255, 255, 0.5);
+  }
+  .courses .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
 
+@media (max-width: 800px) {
+  .description .container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  footer .container .contacts div {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .phoneNumbers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .phoneNumber p,
+  footer .e-mail p {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    height: 50px;
+  }
+  header .registerOnCourse {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    height: 7vh;
+    min-height: 20px;
+    width: 100%;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: calc(12.8561px + 0.357462vw);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .banner .container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner__text {
+    margin-left: 0;
+  }
+
+  .banner__text p {
+    width: auto;
+    font-size: calc(14px + 2vw);
+  }
+
+  .banner__text h1 {
+    font-size: calc(25px + 1vw);
+  }
+
+  .courses .container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+  }
+
+  .courses .container a {
+    text-align: center;
+  }
+
+  .courses .container .shedule,
+  .courses .container .term,
+  .courses .container .biginCourse {
+    font-size: calc(13px + 0.357462vw);
+  }
+
+
+
+
+  
+
+
+
+
+
+  .singUpForCourse .container form .rowFormFields {
+    flex-direction: column;
+  }
+
+  .singUpForCourse .container form .rowFormFields .formField {
+    margin-right: 0;
+  }
+
+  .jq-selectbox__select {
+    width: calc(100% - 17px);
+  }
+
+  .jq-selectbox__trigger-arrow {
+    right: -30px;
+  }
 }
