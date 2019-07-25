@@ -763,7 +763,11 @@ footer .container .copyright {
   
 
 
-
+  .singUpForCourse .container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .singUpForCourse .container form .rowFormFields {
     flex-direction: column;
