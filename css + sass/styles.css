@@ -582,7 +582,8 @@ footer .container .copyright {
   }
 
   .banner {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/imagesHome/backgroundBanner.svg) no-repeat top center;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/imagesHome/backgroundBanner.svg) no-repeat top left;
+    background-size: auto 100%;
   }
 
   .description .container,
