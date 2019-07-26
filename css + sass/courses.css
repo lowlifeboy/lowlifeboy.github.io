@@ -46,6 +46,7 @@
 .courceMainMoments .container {
   display: flex;
   padding: 70px 0;
+  margin: 0 20px;
 }
 .courceMainMoments .container ul {
   width: 100%;
@@ -54,7 +55,7 @@
   list-style: none;
 }
 .courceMainMoments .container ul li {
-  padding: 20px 50px;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,3 +165,46 @@
 }
 
 /*# sourceMappingURL=courses.css.map */
+
+@media (max-width: 1150px) {
+  .courseFullDescription .container {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .courseFullDescription .container {
+    background: none;
+  }
+  .courseFullDescription .container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .courseFullDescription .container ul li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .courseBanner .courseShortDescription {
+    font-size: calc(14px + 2vw);
+    font-weight: normal;
+  }
+  .courseBanner a {
+    font-size: 14px;
+    padding: 7px 9px;
+  }
+  .courceMainMoments .container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .courceMainMoments .container ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}

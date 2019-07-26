@@ -674,10 +674,6 @@ footer .container .copyright {
     grid-template-columns: 1fr;
   }
 
-  footer {
-    padding-bottom: 50px;
-  }
-
   footer .container {
     flex-direction: column;
     padding: 30px 0;
@@ -769,12 +765,6 @@ footer .container .copyright {
     font-size: calc(13px + 0.357462vw);
   }
 
-
-
-
-  
-
-
   .singUpForCourse .container form {
     display: flex;
     flex-direction: column;
@@ -788,5 +778,9 @@ footer .container .copyright {
 
   .singUpForCourse .container form .rowFormFields .formField {
     margin-right: 0;
+  }
+
+  footer {
+    padding-bottom: 50px;
   }
 }
